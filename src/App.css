@@ -1,38 +1,65 @@
-.App {
+body {
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  padding-bottom: 100px;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container__heading {
+  color: rgb(218, 218, 111);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 10px;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container_msg {
+  background: rgb(226, 185, 185);
+  width: fit-content;
+  padding: 10px;
+  margin: 20px 250px;
+  border-radius: 10px;
+  color: rgb(163, 30, 30);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  position: fixed;
+  bottom: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 20px;
+  margin: 0 2px 0 5px;
+}
+input:focus {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.container__btn {
+  border: none;
+  width: fit-content;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container_msg {
+    background: rgb(226, 185, 185);
+    width: fit-content;
+    padding: 10px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    color: rgb(163, 30, 30);
   }
 }
